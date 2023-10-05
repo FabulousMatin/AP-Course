@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show a trip</title>
+    </head>
+
+    <body>
+        <input id="back" type="submit" value="back to home page" onclick = "window.location = '/utaxi';"/> <br/>
+        <fieldset class="field1">
+            <legend>Enter your username and trip id:</legend>
+            <form action="a_trip_res" method="post">
+                <label class="label" for="username">Enter your username:</label>
+                <input type="text" id="username" name="username" placeholder="username"><br>
+                <label class="label" for="id">Enter your id:</label>
+                <input type="text" id="id" name="id" placeholder="id"><br>
+                <input type="submit" value="show">
+            </form>
+        </fieldset>
+    </body>
+</html>
+
+<style>
+    body{
+        background-color:burlywood;
+        text-align: center;
+        margin:50px;
+    }
+    .field1{
+        text-align: center;
+        border: 4px dotted black;
+        width: 70%;
+        height: 250px;
+        margin: auto;
+    }
+    input[type=text]{
+        width: 25%;
+        padding: 12px 20px;
+        margin: 8px;
+        box-sizing: border-box;
+        border: 3px solid black;
+        background-color: white;
+        border-radius: 5px;
+    }
+    input[type = button], input[type = submit]{
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color:lightblue;
+        border-radius: 15px;
+    }
+    *{
+        margin: 10px;
+        font-family: 'Georgia', 'serif';
+    }
+    .label{
+        color:black;
+        font-size: 17px;
+    }
+    input[type = radio]{
+        height: 19px;
+        width: 19px;
+    }
+    #back{
+        float:left;
+        margin-right: 2000px;
+    }
+</style>

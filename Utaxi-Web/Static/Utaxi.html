@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Utaxi Pannel</title>
+    </head>
+    <body>
+        <input class="downSpace" type="submit" value="back to home page" onclick = "window.location = '/';"/> <br/>
+        <h1>passenger</h1>
+        <input type='submit' value='post a trip' onclick="window.location = '/newtrip';"/>
+        <input type="submit" value="get cost of a trip" onclick="window.location = '/getCost';"/>
+        <input class="downSpace" type="submit" value="cancel a trip" onclick="window.location = '/cancelTrip';"/>
+        <hr><br>
+        <h1>driver</h1>
+        <input type="submit" value="get all trips" onclick="window.location = '/all_trips' ;"/>
+        <input type="submit" value="get a trip" onclick="window.location = '/show_a_trip' ;"/>
+        <input type="submit" value="accept a trip" onclick="window.location = '/acceptTrip' ;"/>
+        <input type="submit" value="finish a trip" onclick="window.location = '/finishTrip' ;"/>
+
+    </body>
+</html>
+
+<style>
+    *{
+        margin: 10px;
+        font-family: 'Georgia', 'serif';
+    }
+    input[type = submit]{
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        background-color:lightblue;
+        border-radius: 15px;
+        border: 2px solid black;
+    }
+    body{
+        background-color:burlywood;
+        text-align: left;
+    }
+    .downSpace{
+        margin-bottom: 45px;
+    }
+</style>
